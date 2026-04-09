@@ -6,6 +6,18 @@
     "bash": "allow",
     "webfetch": "allow"
   },
+  "mcp": {
+    "puppeteer": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-puppeteer"],
+      "enabled": true
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": true
+    }
+  },
   "agent": {
     "scope-checker": {
       "description": "Validates requests against project scope - determines if feature is in v1 plan",
