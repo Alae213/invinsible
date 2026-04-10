@@ -8,11 +8,20 @@
 
 ## First Time Here?
 
-If the context/ folder is empty or missing files, stop and run the setup wizard first:
+**IMPORTANT:** Before starting, detect the project state:
 
-  Read context/SETUP.md and follow it completely before doing anything else.
+1. Check the project folder — Are there source files? (src/, app/, pages/, *.js, *.ts)
+2. Check context/ — Does it have real content or empty stubs?
+3. Determine mode: NEW | CAPTURE | RESUME | SETUP-ONLY
 
-Do not write any code, create any files, or make any assumptions about the project until setup is complete.
+| Mode | What to Do |
+|------|------------|
+| NEW | Read SETUP.md and run wizard from Phase 1 |
+| CAPTURE | Run SETUP.md wizard — it will auto-analyze code first |
+| RESUME | Skip setup. Read context/ and check TASK-LIST.md for what's next |
+| SETUP-ONLY | Run wizard to fill context/ for future code |
+
+Do not write any code, create any files, or make assumptions about the project until you understand its state.
 
 ---
 
@@ -61,6 +70,7 @@ Configuration for these agents is in `opencode.json` and `.opencode/agents/`.
 | context-updater | Syncs context/ files after build work             |
 | next-action     | Reads context and decides what to do next         |
 | uat-guide       | Generates browser test checklist for user        |
+| explore         | Analyzes existing codebase, detects stack/features |
 
 ---
 
@@ -101,6 +111,12 @@ Configuration for these agents is in `opencode.json` and `.opencode/agents/`.
 - The user says "test this", "try this out", "check this in the browser"
 - The user says "let me test", "I want to test", "can I test now"
 - Any time a human needs to validate something in the real browser
+
+**explore**
+- Setting up the framework in an existing project
+- User wants to "set up for existing code" or "add framework to my project"
+- Need to understand what's already built before continuing
+- Before the setup wizard asks questions in CAPTURE mode
 
 ---
 

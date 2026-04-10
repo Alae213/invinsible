@@ -4,6 +4,8 @@
 
 Invinsible is a framework that gives OpenCode everything it needs to build your app autonomously. Just tell it what you want, and it handles the technical work. You test in your browser and say what's wrong. That's it.
 
+The framework now works with both new projects and existing codebases. When you add this framework to an existing project, it automatically detects the project state and asks verification questions instead of starting from scratch.
+
 ---
 
 ## Who Is This For?
@@ -23,6 +25,26 @@ If you've ever thought "I wish I could just tell someone what I want and they'd 
 3. **10-15 minutes** for the first setup conversation
 
 That's it. No coding knowledge required.
+
+---
+
+## Two Ways to Use This Framework
+
+### Option 1: New Project
+
+You have an idea and want to build something from scratch. The wizard asks all the questions to understand your vision.
+
+### Option 2: Existing Project
+
+You have code already written but want to add this framework. The wizard:
+1. Analyzes your existing code
+2. Detects your tech stack and features
+3. Asks verification questions ("I see you're using Next.js. Correct?")
+
+This works whether your code is:
+- Fully working and you just want the framework
+- Partially complete with missing features
+- Incomplete/broken and you want to finish it
 
 ---
 
